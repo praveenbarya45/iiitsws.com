@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.notification {
+  background-color: #000080;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+ float: right;
+}
+
+.notification:hover {
+  background:#d9d9ff ;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+.my,.mySlides {display:none;}
+ul {
+min-width: 5px;
+width:100%;
+  list-style-type: none;
+  margin: 5px;
+  padding: 0px;
+  overflow: hidden;
+  background-color:#d9d9ff;
+}
+li {
+ border: 1px :#d9d9ff;
+border-radius:10px;
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+border:1px :#d9d9ff;
+border-radius:10px;
+  background-color: #C0C0C0 ;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+center;
+  display: none;
+  position: absolute;
+  background-color:#d9d9ff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: #C0C0C0;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+body {
+  background-color:#f2f2f2;
+}
+</style>
+<body>
+<?php
+echo "Today is " . date("d/m/y");
+echo ",  " . date("l");
+?>
+<img  align=left src="logo2.png" width="200px" height="200px" ><br>
+<h2 > &emsp;&emsp;&emsp;INDIAN INSTITUTE OF INFORMATION TECHNOLOGY , BHOPAL</h2>
+<a align="right" href="#" class="notification">
+  <span>Notification</span>
+  <span class="badge">4</span>
+</a>
+<br><h1 >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;" Student's Welfare Society "</h1>
+<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;Session 2019-20</p>
+<ul>
+  <li><a href="IIIT BHOPAL.html">Home</a></li>
+  <li><a href="au.html">About Us</a></li>
+<li><a href="#">Beneficiaries</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Students Section</a>
+    <div class="dropdown-content">
+      <a href="praveen.html">Registration</a>
+      <a href="cs.html">Check Status</a>
+      <a href="#">Renew Application</a>
+
+<li class="dropdown">
+<a href="javascript:void(0) class="dropbtn"> Login</a>
+   <div class="dropdown-content">
+      <a href="login.html">Student Login</a>
+      <a href="login.html">Admin Login</a>
+    </div>
+  </li>
+<li border:1px solid blue; border-radius:10px;><a href="#home">&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;</a></li>
+<marquee bgcolor="#d9d9ff" BGCOLOR=lightgreen align="center" width="8%" direction="left" height="100%">
+ &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<br>" WELCOME&nbsp TO&nbsp IIIT&nbsp BHOPAL " 
+</marquee>
+</ul>
+<br><br><h2 align=center class="w3-center">Recents Benificiary</h2>
+<div   class="w3-content w3-section" >
+<img  align=right class="mySlides"  src="I5.jpg" style="width:20% " "height:10%">
+  <img  align=right  class="mySlides" src="i1.jpg" style="width:20%"  "height:10%">
+  <img align=right   class="mySlides" src="i2.jpg" style="width:20%" "height:10%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); 
+}
+</script>
+
+<div   class="content" >
+<img align=left  class="my"  src="i6.jpg" style="width:20% " "height:10%">
+  <img align=left class="my" src="i4.jpg" style="width:20%"  "height:10%">
+  <img  align=left class="my" src="i3.jpg" style="width:20%" "height:10%">
+</div>
+<script>
+var Index = 0;
+carouse();
+
+function carouse() {
+  var j;
+  var y = document.getElementsByClassName("my");
+  for (j = 0; j < y.length; j++) {
+    y[j].style.display = "none";  
+  }
+  Index++;
+  if (Index > y.length) {Index = 1}    
+  y[Index-1].style.display = "block";  
+  setTimeout(carouse, 3000); // Change image every 3 seconds
+}
+</script>
+
+ <form action="file:///C:/action_page.php">
+
+  </form>
+</div>
+<center>
+<marquee align=center width="40%" direction="left" BGCOLOR=#d9d9ff height="40%">
+1. ANJALI &nbspSIKARWAR  (CSE)<br>
+2. PRAVEEN &nbspAHIRWAR  (CSE)<br>
+3. RAM &nbspAGRAWAL  (CSE)<br>
+4. ABHISHEK &nbspKUMAR  (CSE)<br>
+5. SANJEET &nbspSINGH  (CSE)</marquee><br><br><br><br>
+<a  href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+</center>
+</body>
+</html>

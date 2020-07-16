@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<style>
+ul {
+min-width: 5px;
+width:100%;
+  list-style-type: none;
+  margin: 5px;
+  padding: 0px;
+  overflow: hidden;
+  background-color:#d9d9ff;
+}
+.name,.father,.gender{
+width:10%;
+border-radius:40px;
+}
+.income{
+width:8%;
+}
+.amount,.enter
+{
+width:80%;
+}
+body {
+  background-color:  #f2f2f2;
+}
+input[type=text], select {
+background-color:"lightblue";
+  width: 17%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #000080;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+border-radius:40px;
+  background-color: BLUE;
+}
+
+div {
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+
+<img  align=left src="logo2.png" width="160px" height="130px" >
+<img  align=right src="logo2.png" width="160px" height="130px" >
+<h2 align="center"> INDIAN INSTITUTE OF INFORMATION TECHNOLOGY , BHOPAL</h2>
+<h1 align="center">"  Student's Welfare Society "</h1>
+<p align="center">Session 2019-20</p>
+<div>
+ <form action="connect.php" method="post">
+
+<ul>
+  <li ><h3 align=center>"  STUDENT - INFORMATION "</h3></li>
+</ul>
+<marquee align="right" width="100%" direction="left" BGCOLOR=#d9d9ff >"PLEASE&nbsp; FILL&nbsp; OUT&nbsp; ALL &nbsp;THE&nbsp; FIELDS "
+</marquee>
+&nbsp; &nbsp;&emsp;&nbsp; &nbsp; &nbsp; &nbsp;
+<select   class="name" id="" name="id" >
+   
+   <option  width="10%" value="Shri">Shri</option>
+ 
+<option class="name" value="Ku.">Ku.</option>
+
+<option value="Mr.">Mr.</option>
+       
+<option value="Mrs.">Mrs.</option>
+    
+  
+
+</select>
+&emsp;&nbsp; &nbsp;
+    <label for="fname">Scholar No. </label>
+&nbsp; 
+    <input type="text" id="sn" name="sn"   placeholder="Your Scholar  Number.." >
+&emsp;&nbsp; &nbsp;&nbsp;
+  <label for="fname">First Name</label>
+&nbsp; 
+    <input type="text" id="fname" name="fname" placeholder="Your First name.." >
+&emsp;&nbsp; &nbsp;&nbsp;
+    <label for="lname">Last Name</label>
+&nbsp; 
+    <input type="text" id="lname" name="lname" placeholder="Your last name.." >
+<br><br>
+ &nbsp;&nbsp; &nbsp;
+<label for="Gender">Gender</label>
+&nbsp; 
+<select  class="gender" id="Gender" name="Gender">
+   
+   <option value="Male">Male</option>
+      
+<option value="Female">Female</option>
+    
+  <option value="Other">Other</option>
+
+</select>
+
+&emsp;&nbsp; &nbsp; 
+  <label for="lname">Father's Name</label>
+&nbsp;
+    <input type="text" id="lname" name="father" placeholder="Your Father's name.." >
+
+&emsp;&nbsp; &nbsp; 
+ <label for="lname">Mother's Name</label>
+&nbsp;
+    <input type="text" id="lname" name="mother" placeholder="Your Mother's name..">
+&emsp; &nbsp;&nbsp;   
+<label for="Father's Occupation">Father's Occupation</label>
+&nbsp;
+<select  class="father" id="Father's Occupation" name="Occupation">
+   
+   <option value="Govt. Servent">Govt. Servent</option>
+      
+<option value="Farmer">Farmer</option>
+    
+  <option value="Self-Employee">Self-Employee</option>
+
+<option value="Other">Other</option>
+
+</select> 
+<br><br> 
+<label for=" Annual Income"> Annual Income</label>
+<select class="income"  id="Income" name="income" >
+   
+   <option value="UP-To 50,000">Up-To 50,000</option>
+      
+<option value="UP-To 2.5 Lakhs">Up-To 2.5 Lakhs</option>
+    
+  <option value="More Than 5 Lakhs">More Than 5 Lakhs</option>
+
+</select>
+&emsp;  
+ <label for="Mobile Number">Mobile Number</label>
+&nbsp;
+    <input type="text" id="Mobile Number" name="contact" placeholder="Enter Mobile Number.." >
+ 
+&emsp; 
+<label for="E-Mail ID">E-Mail ID</label>
+&nbsp;
+    <input type="text" id="E-Mail ID" name="email" placeholder="Enter E-mail Id.." >  
+&emsp; 
+ <label for="Create Password">Create Password</label>
+&nbsp;    
+<input type="text" id="Password" name="password" placeholder="Enter Password .." >
+<h2 align="center">"Information About The Subject of  Amount Claim's "</h2>
+&emsp;&emsp;&emsp;
+<label  for="Enter Details ">Enter Details</label>
+    <input type="text"  class="enter" id="Enter Details" name="details" placeholder="Enter Details.".>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<label  for="Enter Amount ">Enter Amount</label>
+<input type="text"  id="Amount " name="amount" placeholder="Enter Amount.." >
+&emsp;&emsp;
+    <input type="submit" value="Submit">
+  </form>
+
+</div>
+
+</body>
+</html>
